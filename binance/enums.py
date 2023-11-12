@@ -49,6 +49,7 @@ TIME_IN_FORCE_GTC = 'GTC'  # Good till cancelled
 TIME_IN_FORCE_IOC = 'IOC'  # Immediate or cancel
 TIME_IN_FORCE_FOK = 'FOK'  # Fill or kill
 TIME_IN_FORCE_GTX = 'GTX'  # Post only order
+TIME_IN_FORCE_GTE_GTC = 'GTE_GTC'
 
 ORDER_RESP_TYPE_ACK = 'ACK'
 ORDER_RESP_TYPE_RESULT = 'RESULT'
