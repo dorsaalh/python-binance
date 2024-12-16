@@ -47,7 +47,7 @@ class ReconnectingWebsocket:
     MIN_RECONNECT_WAIT = 0.1
     TIMEOUT = 10
     NO_MESSAGE_RECONNECT_TIMEOUT = 60
-    MAX_QUEUE_SIZE = 100
+    MAX_QUEUE_SIZE = 5000
 
     def __init__(
         self,
