@@ -57,7 +57,7 @@ class ReconnectingWebsocket:
         is_binary: bool = False,
         exit_coro=None,
         https_proxy: Optional[str] = None,
-        max_queue_size: int = 100,
+        max_queue_size: int = 5000,
         **kwargs,
     ):
         self._loop = get_loop()
