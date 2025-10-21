@@ -43,7 +43,7 @@ from binance.ws.constants import WSListenerState
 
 
 class ReconnectingWebsocket:
-    MAX_RECONNECTS = 5
+    MAX_RECONNECTS = 10
     MAX_RECONNECT_SECONDS = 60
     MIN_RECONNECT_WAIT = 0.1
     TIMEOUT = 10
