@@ -1,5 +1,24 @@
 Changelog
+
+v1.0.32 - 2025-11-03
+^^^^^^^^^^^^^^^^^^^^
+
+**Fixed**
+
+-  signature encoding for non-ascii symbols in both private and public endpoints (#1619)
+
+
+v1.0.30 - 2025-10-14
+^^^^^^^^^^^^^^^^^^^^
 =========
+
+v1.0.31 - 2025-10-29
+^^^^^^^^^^^^^^^^^^^^
+
+**Fixed**
+
+- fix signature encoding for non-ascii symbols (#1612), eg: 币安人生USDT
+
 
 v1.0.30 - 2025-10-14
 ^^^^^^^^^^^^^^^^^^^^

@@ -374,7 +374,7 @@ class BaseClient:
                 sig_func = self._rsa_signature
             else:
                 sig_func = self._ed25519_signature
-        query_string = "&".join([f"{d[0]}={d[1]}" for d in self._order_params(data)])
+        query_string = "&".join([f"{d[0]}={_urlencode.quote(d[1]) if d[0] == 'symbol' else d[1]}" for d in self._order_params(data)])
         res = sig_func(query_string)
         return self.encode_uri_component(res) if uri_encode else res
 
@@ -514,7 +514,7 @@ class BaseClient:
         # if get request assign data array to params value for requests lib
         if data and (method == "get" or force_params):
             kwargs["params"] = "&".join(
-                "%s=%s" % (data[0], data[1]) for data in kwargs["data"]
+                "%s=%s" % (data[0], _urlencode.quote(data[1]) if data[0] == 'symbol' else data[1]) for data in kwargs["data"]
             )
             del kwargs["data"]
 
